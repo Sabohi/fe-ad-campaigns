@@ -1,0 +1,14 @@
+.status {
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    &.active {
+        background-color: $success-color;;
+    }
+    &.inactive {
+        background-color: $error-color;
+    }
+  }

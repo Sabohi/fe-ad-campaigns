@@ -1,0 +1,14 @@
+# app
+build/
+node_modules/
+public/
+jsconfig.json
+# documentation
+docs/
+.cache/
+# test
+src/__tests__/**/*.js
+!src/__tests__/**/*.spec.js
+coverage/
+serviceWorkerRegistration.js
+service-worker.js

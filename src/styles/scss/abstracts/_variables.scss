@@ -1,0 +1,50 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+/// Container's maximum width
+/// @type Length
+$container-max-width: 1150px !default;
+$max-width: 1150px !default;
+
+/* Text Variables */
+// @type Color
+$white: #fff !default;
+$secondary-light-color: #72d36b !default;
+$heading-base-color: #000 !default; // 000
+$background-color: var(--bg-color);
+$secondary-color: var(--secondary-color);
+$secondary-text-color: var(--secondary-text-color);
+$text-color: var(--text-color);
+$icon-color: var(--icon-color);
+$button-text-color: var(--btn-text-color);
+$background-color: var(--list-bg-color);
+$success-color: var(--success-color); 
+$error-color: var(--error-color); 
+
+/* Theme font-family Variables */
+$DINLight: 'Roboto-Light' !default;
+$DINRegular: 'Roboto-Regular' !default;
+$DINMedium: 'Roboto-Medium' !default;
+$DINBold: 'Roboto-Bold' !default;
+
+/* Heading font size variable */
+$font-size-h1: 64px !default;
+/* Font size 64px */
+$font-size-h2: 48px !default;
+/* Font size 48px */
+$font-size-h3: 24px !default;
+/* Font size 24px */
+$font-size-h4: 16px !default;
+/* Font size 16px */
+
+/* Theme Other Variables */
+$font-size-base: 14px;
+/* Font size 14px */
+$font-size-base-small: 12px;
+/* Font size 12px */
+$fieldBorder: rgba(25, 51, 78, 0.3) !default;
+/* Feild Border color */
+$line-height-base: 1.428571429 !default;
+/* Default Line-height */
+$line-height-computed: floor(($font-size-base * $line-height-base)) !default; //** Computed "line-height"
