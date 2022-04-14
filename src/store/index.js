@@ -10,7 +10,7 @@ const middlewares = [thunk, routerMiddleware(history)];
 
 const persistConfig = {
   storage,
-  key: 'root'
+  key: 'root',
 };
 
 const composeEnhancers = (process.env.NODE_ENV === 'development' && window !== undefined && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__) || compose;

@@ -18,7 +18,7 @@ describe('Testing userReducer function', () => {
   });
   it('handle GET_USERS_FAILURE', () => {
     action.type = userConstants.GET_USERS_FAILURE;
-    action.error = {error: 'no data'};
-    expect(userReducer({}, action)).toEqual({  userList: [], userError: {error: 'no data'} });
+    action.error = { error: 'no data' };
+    expect(userReducer({}, action)).toEqual({ userList: [], userError: { error: 'no data' } });
   });
 });

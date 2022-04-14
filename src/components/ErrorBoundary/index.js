@@ -53,7 +53,7 @@ class ErrorBoundary extends React.Component {
       return (
         <>
           <div className="error-content">
-          <h2 className="error_Heading"> Oops! Something went wrong.</h2>
+            <h2 className="error_Heading"> Oops! Something went wrong.</h2>
             <div className="error_content_detail">
               <p className="error_details">
                 We appologize for any inconvenience, but an unexpected error occured while you were browsing the ad campaigns.

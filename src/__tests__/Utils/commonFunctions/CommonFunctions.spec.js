@@ -2,7 +2,6 @@ import * as _ from '@/utils/commonFunctions/CommonFunctions';
 import localization from '@/utils/localization';
 
 describe('Testing the common functions', () => {
-
   describe('Testing getUrl function', () => {
     it('should return an url with params apended', () => {
       const url = 'https://jsonplaceholder.typicode.com/user';
@@ -51,6 +50,4 @@ describe('Testing the common functions', () => {
       expect(_.convertToICS(param)).toBe('56.60K USD');
     });
   });
-
-
 });

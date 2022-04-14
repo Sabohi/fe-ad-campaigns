@@ -1,10 +1,11 @@
 import localization from '@/utils/localization';
 import { convertToICS } from '@/utils/commonFunctions/CommonFunctions';
 import moment from 'moment';
+import { GLOBALCONSTANTS } from '@/utils/GlobalConstants';
 
 export const prepareData = (receivedData, userList) => {
   const data = [...receivedData.values()];
-  const dateFormat = 'YYYY-MM-DD';
+  const dateFormat = GLOBALCONSTANTS.DATE_FORMAT;
   // Filter out data which contains startDate less than end date but rws with blank start or end will be shown.
   const dataFilter = data.length
     ? data.filter((item) => {

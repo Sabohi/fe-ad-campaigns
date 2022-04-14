@@ -6,4 +6,4 @@ export const userMapper = (response) =>
         id: res?.id,
         name: res?.name || localization.common.unknownUser,
       }))
-  : [];
+    : [];
