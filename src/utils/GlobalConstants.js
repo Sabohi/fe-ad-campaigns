@@ -10,5 +10,5 @@ export const GLOBALCONSTANTS = {
     NOT_FOUND_COMPONENT: '/404',
   },
   UNSAFE_LIFECYCLE_METHOD_NAMES: ['componentWillMount', 'componentWillReceiveProps', 'componentWillUpdate'],
-  DATE_FORMAT: 'YYYY-MM-DD'
+  DATE_FORMAT: 'YYYY-MM-DD',
 };

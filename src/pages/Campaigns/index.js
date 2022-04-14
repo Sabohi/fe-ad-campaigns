@@ -49,12 +49,7 @@ function CampaignList() {
   return (
     <>
       {loader}
-      <DataTable 
-        title={localization.header.campaignHeading} 
-        data={data} 
-        columns={columns} 
-        options={options} 
-      />
+      <DataTable title={localization.header.campaignHeading} data={data} columns={columns} options={options} />
     </>
   );
 }
