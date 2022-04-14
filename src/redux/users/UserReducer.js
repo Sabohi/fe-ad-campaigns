@@ -18,7 +18,7 @@ export default function userReducer(state = initialState, action = {}) {
       return {
         ...state,
         userList: [],
-        userError: action?.error || action.response,
+        userError: {},
       };
     case userConstants.GET_USERS_SUCCESS:
       return {
@@ -29,7 +29,8 @@ export default function userReducer(state = initialState, action = {}) {
     case userConstants.GET_USERS_FAILURE:
       return {
         ...state,
-        userError: action?.data || action?.error,
+        userList: [],
+        userError: action?.error || {},
       };
     default:
       return { ...state };

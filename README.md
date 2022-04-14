@@ -88,6 +88,7 @@ $ yarn docs
 3. If either start date or end date is empty, that data will be shown in Table.
 4. Campaign is active (a campaign is running when the current date is inside the start-end date range).
 5. User name (can be Unknown user, if the user's data is missing for specified userId).
+6. No campaigns are shown by default, those which are provided through JS console will be shown.
 ```
 
 # ad-campaigns

@@ -87,7 +87,7 @@ class ErrorBoundary extends React.Component {
 }
 
 ErrorBoundary.propTypes = {
-  children: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.node, PropTypes.bool, PropTypes.object])).isRequired,
+  children: PropTypes.oneOfType([PropTypes.node, PropTypes.bool, PropTypes.object]).isRequired,
   history: PropTypes.oneOfType([PropTypes.object]).isRequired,
   location: PropTypes.oneOfType([PropTypes.object]).isRequired,
 };

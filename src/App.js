@@ -20,21 +20,10 @@ const App = () => {
       {/* Initializes the global app styles dynamically */}
       <GlobalStyled />
       <ErrorBoundary>
-        {false && (
-          <div id="preloader">
-            <div id="loader" />
-          </div>
-        )}
         <Switch>{routes.map((route) => route)}</Switch>
       </ErrorBoundary>
     </>
   );
 };
-// App.propTypes = {
-//   // /**
-//   //  * Boolean representing loader state
-//   //  */
-//   primaryLoader: PropTypes.bool.isRequired,
-// };
 
 export default App;

@@ -15,7 +15,7 @@ function DataTable({ title, data, columns, options }) {
   return (
     <CacheProvider value={muiCache}>
       <ThemeProvider theme={theme}>
-        <MUIDataTable title={title} data={data} columns={columns} options={options} />
+        <MUIDataTable title={title} data={data} columns={columns} options={options} data-testid="table" />
       </ThemeProvider>
     </CacheProvider>
   );

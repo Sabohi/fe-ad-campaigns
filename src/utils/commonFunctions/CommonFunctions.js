@@ -45,25 +45,6 @@ export const getUrl = (baseUrl, paramObj) => {
 
 export const equalityChecker = (param1, param2) => _.isEqual(param1, param2);
 
-/**
- * @summary Check Empty wrapper function on top of lodash.
- * Performs a length check on given Object or array.
- * @description Checks if value is empty.
- * @param {any} param1 The data to be checked.
- * @return {boolean} Returns true if the it's not empty, else false.
- */
-
-export const checkEmpty = (param1) => {
-  const isNum = !Number.isNaN(Number(param1));
-  if (param1 === null || param1 === undefined) return true;
-
-  if (isNum && Number(param1) > 0) return false;
-
-  if (isNum && Number(param1) <= 0) return true;
-
-  return _.isEmpty(param1);
-};
-
 export const convertToICS = (monetaryValue) => {
   let currency = null;
   const absVal = Math.abs(Number(monetaryValue));
