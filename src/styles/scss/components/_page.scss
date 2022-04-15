@@ -94,7 +94,7 @@ button:focus {
   margin: -75px 0 0 -75px;
   border-radius: 50%;
   border: 3px solid transparent;
-  border-top-color: blueviolet;
+  border-top-color: $background-color;
   -webkit-animation: spin 2s linear infinite;
   animation: spin 2s linear infinite;
 }
@@ -107,7 +107,7 @@ button:focus {
   bottom: 5px;
   border-radius: 50%;
   border: 3px solid transparent;
-  border-top-color: #def8dc;
+  border-top-color: $secondary-color;
   -webkit-animation: spin 3s linear infinite;
   animation: spin 3s linear infinite;
 }
@@ -157,24 +157,4 @@ button:focus {
 
 .cursor-pointer {
   cursor: pointer;
-}
-
-.nodatafound {
-  height: 20px;
-  align-items: center;
-  height: 20px;
-  display: flex;
-  width: 100%;
-  font-weight: 600;
-  font-size: 20px;
-  justify-content: center;
-  @include breakpoint(mediumdesktop) {
-    font-size: 16px;
-  }
-}
-
-.no-data {
-  background: azure;
-  padding: 40px;
-  text-align: center;
 }
