@@ -76,7 +76,7 @@ $ yarn docs
 **To run test by user**
 
 ```window
-1. Call globally exposed method provideData, and provide data in array form.
+1. Call globally exposed method provideData, and please provide data in array form.
 2. If data set is provided with same id, that dataset is updated by later one.
 ```
 
