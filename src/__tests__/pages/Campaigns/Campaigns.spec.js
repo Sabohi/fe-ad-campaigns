@@ -7,8 +7,8 @@ import Campaigns from '@/pages/Campaigns';
 import { shallow } from 'enzyme';
 import localization from '@/utils/localization';
 
-describe('Testing ad campaign module mounting', () => {
-  it('should mount the component', () => {
+describe('Testing Campaign module mounting', () => {
+  it('Campaigns snapshot test', () => {
     const wrapper = shallow(
       <Provider store={store}>
         <Campaigns />
@@ -18,7 +18,7 @@ describe('Testing ad campaign module mounting', () => {
   });
 });
 
-describe('ad campaign module testing without data', () => {
+describe('Campaigns module testing', () => {
   let wrapper;
   beforeEach(() => {
     cleanup();

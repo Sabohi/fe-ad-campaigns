@@ -41,7 +41,7 @@ export const columns = [
       searchable: false,
       customBodyRender: (value) => (
         <FormControlLabel
-          control={<span className={`status ${value ? 'active' : 'inactive'}`} />}
+          control={<span className={`status ${value ? 'active' : 'inactive'}`} data-testid="campaign-row" />}
           label={value ? localization.common.active : localization.common.inactive}
         />
       ),

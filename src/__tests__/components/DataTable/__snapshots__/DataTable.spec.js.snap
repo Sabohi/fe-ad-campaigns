@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Testing ad campaign module mounting should mount the component 1`] = `
+exports[`Testing Datatable module mounting DataTable snapshot test 1`] = `
 <ContextProvider
   value={
     Object {
@@ -23,6 +23,11 @@ exports[`Testing ad campaign module mounting should mount the component 1`] = `
     }
   }
 >
-  <CampaignList />
+  <DataTable
+    columns={Array []}
+    data={Array []}
+    options={Object {}}
+    title=""
+  />
 </ContextProvider>
 `;

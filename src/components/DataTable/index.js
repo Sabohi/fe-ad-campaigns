@@ -12,6 +12,7 @@ const muiCache = createCache({
 });
 
 function DataTable({ title, data, columns, options }) {
+  console.log('========');
   return (
     <CacheProvider value={muiCache}>
       <ThemeProvider theme={theme}>
