@@ -12,7 +12,7 @@
 **2. Clone the repo**
 
 ```shell
-$ git clone https://github.com/Sabohi/ad-campaigns
+$ git clone https://github.com/Sabohi/fe-ad-campaigns.git 
 ```
 
 **3. Install the packages**
@@ -76,7 +76,91 @@ $ yarn docs
 **To run test by user**
 
 ```window
-1. Call globally exposed method provideData, and please provide data in array form.
+1. Call globally exposed method AddCampaigns, and please provide data in array form.
+Sample data: 
+[
+    {
+        "id": 11,
+        "name": "Divya",
+        "startDate": "1/19/2022",
+        "endDate": "4/30/2022",
+        "Budget": 88376,
+        "userId": 3
+    },
+    {
+        "id": 12,
+        "name": "Jaipreet",
+        "startDate": "11/21/2017",
+        "endDate": "2/21/2018",
+        "Budget": 508715,
+        "userId": 6
+    },
+    {
+        "id": 15,
+        "name": "Miso",
+        "startDate": "11/1/2017",
+        "endDate": "6/20/2017",
+        "Budget": 139507,
+        "userId": 7
+    },
+    {
+        "id": 16,
+        "name": "Trilith",
+        "startDate": "8/25/2017",
+        "endDate": "11/30/2017",
+        "Budget": 199838,
+        "userId": 7
+    },
+    {
+        "id": 17,
+        "name": "Lara",
+        "startDate": "11/28/2017",
+        "endDate": "3/10/2018",
+        "Budget": 439850,
+        "userId": 6
+    },
+    {
+        "id": 18,
+        "name": "Prabhojit",
+        "startDate": "7/2/2017",
+        "endDate": "6/23/2017",
+        "Budget": 258131,
+        "userId": 2
+    },
+    {
+        "id": 19,
+        "name": "Blogtag",
+        "startDate": "6/27/2017",
+        "endDate": "1/15/2018",
+        "Budget": 509578,
+        "userId": 3
+    },
+    {
+        "id": 20,
+        "name": "Riyaz",
+        "startDate": "10/13/2017",
+        "endDate": "1/25/2018",
+        "Budget": 279852,
+        "userId": 5
+    },
+    {
+        "id": 21,
+        "name": "Zubi",
+        "startDate": "9/6/2017",
+        "endDate": "11/10/2017",
+        "Budget": 309819,
+        "userId": 7
+    },
+    {
+        "id": 22,
+        "name": "Rahul",
+        "startDate": "3/5/2018",
+        "endDate": "10/2/2017",
+        "Budget": 505402,
+        "userId": 7
+    }
+]
+
 2. If data set is provided with same id, that dataset is updated by later one.
 ```
 
