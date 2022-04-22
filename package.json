@@ -7,7 +7,7 @@
     "start": "craco start",
     "prebuild": "yarn generate-build-meta",
     "build": "cross-env GENERATE_SOURCEMAP=false craco build",
-    "test": "jest",
+    "test": "jest --detectOpenHandles",
     "prettier": "prettier --write **/*.{js,jsx,json}",
     "lint": "eslint --cache **/*.{js,jsx}",
     "format": "yarn prettier && yarn lint --fix",

@@ -19,6 +19,7 @@ describe('Testing Datatable module mounting', () => {
 });
 
 describe('Datatble module testing', () => {
+  console.error = jest.fn();
   let wrapper;
   beforeEach(() => {
     cleanup();

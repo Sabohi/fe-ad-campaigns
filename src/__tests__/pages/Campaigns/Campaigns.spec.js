@@ -19,6 +19,7 @@ describe('Testing Campaign module mounting', () => {
 });
 
 describe('Campaigns module testing', () => {
+  console.error = jest.fn();
   let wrapper;
   beforeEach(() => {
     cleanup();
