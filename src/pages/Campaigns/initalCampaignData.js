@@ -5,7 +5,7 @@ export const initalCampaignData = [
       "startDate": "1/19/2022",
       "endDate": "4/30/2022",
       "Budget": 88377,
-      "userId": 3
+      "userId": 2
     },
     {
       "id": 2,
@@ -77,6 +77,31 @@ export const initalCampaignData = [
       "startDate": "3/5/2018",
       "endDate": "10/2/2017",
       "Budget": 505602,
+      "userId": 6
+    },
+    {
+      "id": 11,
+      "name": "Ane",
+      "startDate": "2/5/2022",
+      "endDate": "3/5/2022",
+      "Budget": 5099602,
       "userId": 5
+    },
+    {
+      "id": 12,
+      "name": "Clause",
+      "startDate": "3/5/2020",
+      "endDate": "10/7/2020",
+      "Budget": 10005602,
+      "userId": 10
+    },
+    {
+      "id": 13,
+      "name": "Hamilton",
+      "startDate": "7/5/2021",
+      "endDate": "10/2/2021",
+      "Budget": 50005602,
+      "userId": 9
     }
+
 ];
