@@ -6,7 +6,6 @@ import { GLOBALCONSTANTS } from '@/utils/GlobalConstants';
 export const prepareData = (receivedData, userList) => {
   const data = [...receivedData.values()];
   const dateFormat = GLOBALCONSTANTS.DATE_FORMAT;
-  console.warn = jest.fn();
   // Filter out data which contains startDate less than end date but rws with blank start or end will be shown.
   const dataFilter = data.length
     ? data.filter((item) => {

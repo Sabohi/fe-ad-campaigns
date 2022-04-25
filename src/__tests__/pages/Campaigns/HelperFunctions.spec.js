@@ -7,6 +7,7 @@ import { users } from './HelperFunctionsData';
 describe('Testing prepareData function', () => {
   let receivedData = new Map();
   let userList = [];
+  console.warn = jest.fn();
   it('should return blank array', () => {
     expect(_.prepareData(receivedData, userList)).toStrictEqual([]);
   });
