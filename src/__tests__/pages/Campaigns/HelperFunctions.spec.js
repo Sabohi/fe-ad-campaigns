@@ -1,7 +1,6 @@
 import * as _ from '@/pages/Campaigns/helperFunctions';
-import { initalCampaignData } from '@/pages/Campaigns/initalCampaignData';
 import localization from '@/utils/localization';
-import { users } from './HelperFunctionsData';
+import { initalCampaignData, users } from './HelperFunctionsData';
 
 describe('Testing prepareData function', () => {
   let receivedData = new Map();
@@ -19,7 +18,7 @@ describe('Testing prepareData function', () => {
     receivedData = initalCampaignData;
     const unKnown = localization.common.unknownUser;
     const expectedData = [
-      ['Divavu', unKnown, '2022-01-19', '2022-04-30', true, '88.38K USD'],
+      ['Divavu', unKnown, '2022-01-19', '2022-04-24', false, '88.38K USD'],
       ['Jaxspan', unKnown, '2017-11-21', '2018-02-21', false, '608.72K USD'],
       ['Trilith', unKnown, '2017-08-25', '2017-11-30', false, '179.84K USD'],
       ['Layo', unKnown, '2017-11-28', '2018-03-10', false, '837.85K USD'],
@@ -37,7 +36,7 @@ describe('Testing prepareData function', () => {
     userList = users;
     receivedData = initalCampaignData;
     const expectedData = [
-      ['Divavu', 'Ervin Howell', '2022-01-19', '2022-04-30', true, '88.38K USD'],
+      ['Divavu', 'Ervin Howell', '2022-01-19', '2022-04-24', false, '88.38K USD'],
       ['Jaxspan', 'Mrs. Dennis Schulist', '2017-11-21', '2018-02-21', false, '608.72K USD'],
       ['Trilith', 'Leanne Graham', '2017-08-25', '2017-11-30', false, '179.84K USD'],
       ['Layo', 'Glenna Reichert', '2017-11-28', '2018-03-10', false, '837.85K USD'],
