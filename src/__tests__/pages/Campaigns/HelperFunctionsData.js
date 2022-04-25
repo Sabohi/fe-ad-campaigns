@@ -337,4 +337,3 @@ export const initalCampaignData = [
     userId: 9,
   },
 ];
-
