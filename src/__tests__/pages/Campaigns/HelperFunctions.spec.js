@@ -2,7 +2,6 @@ import * as _ from '@/pages/Campaigns/helperFunctions';
 import { initalCampaignData } from '@/pages/Campaigns/initalCampaignData';
 import localization from '@/utils/localization';
 import { users } from './HelperFunctionsData';
-// import localization from '@/utils/localization';
 
 describe('Testing prepareData function', () => {
   let receivedData = new Map();
