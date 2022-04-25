@@ -160,6 +160,7 @@ export const columns = [
 ];
 
 export const options = {
+  pagination: false,
   selectableRows: 'none',
   search: true,
   searchPlaceholder: localization.placeHolders.search,
