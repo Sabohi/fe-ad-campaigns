@@ -30,22 +30,24 @@ function CampaignList() {
     setData(processdData);
   }, [userList, inputData]);
 
-  const updateInputData = useCallback((receivedData = []) => {
-    const checkArr = Array.isArray(receivedData);
-    if (checkArr) {
-      startLoader();
-      const processedData = new Map();
-      receivedData.forEach((item) => {
-        processedData.set(item?.id, item);
-      });
-      const updatedInput = new Map([...inputData, ...processedData]);
-      setTimeout(() => {
-        setInputData(updatedInput);
-        stopLoader();
-      }, 3000);
-    }
-  },
- [inputData, startLoader, stopLoader]);
+  const updateInputData = useCallback(
+    (receivedData = []) => {
+      const checkArr = Array.isArray(receivedData);
+      if (checkArr) {
+        startLoader();
+        const processedData = new Map();
+        receivedData.forEach((item) => {
+          processedData.set(item?.id, item);
+        });
+        const updatedInput = new Map([...inputData, ...processedData]);
+        setTimeout(() => {
+          setInputData(updatedInput);
+          stopLoader();
+        }, 3000);
+      }
+    },
+    [inputData, startLoader, stopLoader],
+  );
 
   window.AddCampaigns = updateInputData;
 
