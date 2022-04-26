@@ -6,14 +6,7 @@ module.exports = {
   coverageDirectory: 'coverage',
   setupFilesAfterEnv: ['<rootDir>/src/setupTests.js'],
   collectCoverageFrom: ['src/**/*.{js,jsx,ts,tsx}'],
-  coveragePathIgnorePatterns: [
-    'src/utils/quickblox/*',
-    'src/__mocks__/*',
-    '<rootDir>/node_modules/',
-    '<rootDir>/public',
-    'src/service-worker.js',
-    'src/serviceWorkerRegistration.js',
-  ],
+  coveragePathIgnorePatterns: ['src/utils/quickblox/*', 'src/__mocks__/*', '<rootDir>/node_modules/', '<rootDir>/public'],
   snapshotSerializers: ['enzyme-to-json/serializer'],
   coverageThreshold: {
     global: {

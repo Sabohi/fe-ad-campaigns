@@ -9,7 +9,6 @@ import { PersistGate } from 'redux-persist/integration/react';
 import App from '@/App';
 import history from '@/routes/History';
 import { persistor, store } from '@/store';
-import * as serviceWorkerRegistration from '@/serviceWorkerRegistration';
 
 ReactDOM.render(
   <Provider store={store}>
@@ -21,6 +20,3 @@ ReactDOM.render(
   </Provider>,
   document.getElementById('root'),
 );
-
-// Registers for service worker
-serviceWorkerRegistration.register();
