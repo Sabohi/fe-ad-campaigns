@@ -34,13 +34,11 @@ describe('Campaigns module testing', () => {
   it('it checks "No Data Found" case', () => {
     expect(wrapper.getByText(/no data/i).textContent).toBe(localization.common.noDataFound);
   });
-  it('it checks that table is in document', () => {
-    expect(wrapper.getByLabelText('Table Toolbar')).toBeInTheDocument();
-  });
   it('it checks that search bar is mounted', () => {
-    expect(wrapper.getByTestId('Search-iconButton')).toBeInTheDocument();
+    expect(wrapper.getByTestId('search-bar')).toBeInTheDocument();
   });
   it('it checks that filter table is mounted', () => {
-    expect(wrapper.getByTestId('Filter Table-iconButton')).toBeInTheDocument();
+    expect(wrapper.getByTestId('start-filter')).toBeInTheDocument();
+    expect(wrapper.getByTestId('end-filter')).toBeInTheDocument();
   });
 });

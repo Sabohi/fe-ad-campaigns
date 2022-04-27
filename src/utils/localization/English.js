@@ -1,7 +1,6 @@
 export default {
   header: {
     projectHeader: 'Ad Campaigns',
-    campaignHeading: 'Campaign List',
   },
   common: {
     noDataFound: 'No Data Found',
