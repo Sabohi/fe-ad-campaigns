@@ -23,6 +23,6 @@ export default {
     dateShow: 'Date Range',
   },
   labels: {
-    search: 'Search'
-  }
+    search: 'Search',
+  },
 };
