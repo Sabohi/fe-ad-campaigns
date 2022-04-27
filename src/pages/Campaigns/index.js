@@ -59,7 +59,7 @@ function CampaignList() {
       let searchCheck = true;
       const campaignName = d[0] ? d[0].toLowerCase() : null;
       if (searchQuery || campaignName) {
-        searchCheck = campaignName.includes(searchQuery);
+        searchCheck = campaignName.includes(searchQuery.toLowerCase());
       }
 
       const startCheck = filterList[0];
