@@ -150,7 +150,7 @@ function CampaignList() {
               className="text"
               value={searchQuery}
               onInput={(e) => setSearchQuery(e.target.value)}
-              label={`Enter a ${localization.tableColumns.name}`}
+              label={localization.labels.search}
               variant="outlined"
               placeholder={localization.placeHolders.search}
               size="small"

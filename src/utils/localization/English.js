@@ -22,4 +22,7 @@ export default {
     budget: 'Budget',
     dateShow: 'Date Range',
   },
+  labels: {
+    search: 'Search'
+  }
 };
